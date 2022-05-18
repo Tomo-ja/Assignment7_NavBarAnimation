@@ -35,17 +35,26 @@
                                     <constraint firstAttribute="height" constant="88" id="LhQ-oX-0z5"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iR8-5F-Hrq">
+                                <rect key="frame" x="0.0" y="88" width="394" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iR8-5F-Hrq" secondAttribute="trailing" constant="20" id="0qy-p3-8rM"/>
                             <constraint firstItem="gXC-Bl-s2O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="30G-Vj-WPB"/>
                             <constraint firstItem="gXC-Bl-s2O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MWX-q3-mUq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iR8-5F-Hrq" secondAttribute="bottom" id="buQ-kE-KQZ"/>
+                            <constraint firstItem="iR8-5F-Hrq" firstAttribute="top" secondItem="gXC-Bl-s2O" secondAttribute="bottom" id="cfk-Dd-WCh"/>
+                            <constraint firstItem="iR8-5F-Hrq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wYE-0L-jrz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gXC-Bl-s2O" secondAttribute="trailing" id="z6q-7T-R1J"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="heightOfNavBar" destination="LhQ-oX-0z5" id="MrQ-qR-alQ"/>
+                        <outlet property="mainTableView" destination="iR8-5F-Hrq" id="6er-8J-qwP"/>
                         <outlet property="navBar" destination="gXC-Bl-s2O" id="gY7-KN-fqJ"/>
                     </connections>
                 </viewController>
